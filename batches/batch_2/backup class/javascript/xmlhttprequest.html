@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="showData"></div>
+
+
+<script type="text/javascript">
+	
+	
+ var xhttp = new XMLHttpRequest();
+
+ xhttp.onreadystatechange = function(){
+ 	if(this.readyState == 4 && this.status == 200){
+ 		// document.getElementById('showData').innerHTML = xhhtp.responseText;
+ 		console.log(xhttp.responseText)
+ 	}
+ }
+
+ xhttp.open('GET', 'https://jsonplaceholder.typicode.com/posts',true);
+
+ xhttp.send();
+
+</script>
+</body>
+</html>

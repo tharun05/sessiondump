@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#tabeldata{
+			border-collapse: collapse;
+			width: 100%;
+			font-size:18px;
+			padding:12px 20px 12px 40px;
+			border:1px solid #fcfcfc;
+		}
+		#tabeldata th, #tabeldata td{
+			text-align: left;
+			padding:18px; 
+		}
+		#tabeldata tr{
+			border-bottom: 1px solid grey;
+		}
+		#tabeldata tr.header,#tabeldata tr:hover{
+			background-color: #f2f2f2;
+			cursor: pointer;
+
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="inputText" placeholder="filter data by Name" onkeyup="findrow()">
+	<table id="tabeldata">
+		<tr class="header">
+			<th>Name</th>
+			<th>Location</th>
+			<th>Gender</th>
+		</tr>
+		<tr>
+			<td>Adam</td>
+			<td>Hyderabad</td>
+			<td>Male</td>
+		</tr>
+		<tr>
+			<td>Tharun</td>
+			<td>Hyderabad</td>
+			<td>Male</td>
+		</tr>
+		<tr>
+			<td>jamie</td>
+			<td>Hyderabad</td>
+			<td>Female</td>
+		</tr>
+		<tr>
+			<td>angela</td>
+			<td>Hyderabad</td>
+			<td>Female</td>
+		</tr>
+		<tr>
+			<td>Arun</td>
+			<td>Hyderabad</td>
+			<td>Male</td>
+		</tr>
+		<tr>
+			<td>simson</td>
+			<td>Hyderabad</td>
+			<td>Male</td>
+		</tr>
+	</table>
+
+
+	<script type="text/javascript">
+		function findrow(){
+			var findChar;
+			var inputText = document.getElementById('inputText');
+			findChar = inputText.value.toUpperCase();
+
+			var table = document.getElementById('tabeldata');
+			var tr = table.getElementsByTagName('tr');
+
+			for(var i=0;i<tr.length;i++){
+				var td = tr[i].getElementsByTagName('td')[0];
+
+				if(td){
+					if(td.innerHTML.toUpperCase().indexOf(findChar)> -1){
+						tr[i].style.display='';
+					}
+					else{
+						tr[i].style.display = 'none';
+					}
+				}
+			}
+		}
+	</script>
+</body>
+</html>

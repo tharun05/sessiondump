@@ -1,0 +1,29 @@
+/*.back-img{
+    background-image: url('img_forest.jpg');
+    height: 100vh; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
+body{
+    height: 1080px;
+}
+.box-1,.box-2,.box-3, .box-4{
+    height: 100px;
+    width: 100px;
+    background: blue;
+    border:1px solid;
+    color:#fff;
+}
+.box-one{
+    position: fixed;
+    right:0px;
+    top:300px;
+}
+.box-one .in-box-one{
+height: 60px;
+width: 60px;
+background-color: yellow;
+position: relative;
+top:25px;
+left: 30px;
+}

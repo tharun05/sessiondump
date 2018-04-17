@@ -1,0 +1,345 @@
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li,
+span,
+body,
+input,
+button,
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+div,
+p,
+ul,
+li,
+button,
+table,
+form,
+frame,
+nav {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section-padding {
+    padding: 90px;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header {
+    height: 60px;
+    background-color: #fff;
+}
+
+.header #logo-brand {
+    float: left;
+}
+
+.header #logo-brand img {
+    height: 60px;
+    width: 190px;
+}
+
+.quick-links {
+    float: right;
+}
+
+.quick-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 26px;
+    padding: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.quick-links ul li:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.main {
+    background-image: url(banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main button {
+    height: 40px;
+    width: 100px;
+    background-color: transparent;
+    color: #fff;
+    border-style: none;
+    border: 2px solid #fff;
+}
+
+.tab1 {
+    height: 80px;
+    width: 80px;
+    background-color: orange;
+    border: 1px solid;
+}
+
+.tab1:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.section-one .tab1 p {
+    margin-top: 28px;
+}
+
+.btn-download {
+    float: left;
+    font-weight: bold;
+    margin: 30px;
+    height: 40px;
+    width: 100px;
+    background-color: orange;
+    border-style: none;
+}
+
+.btn-download:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.section-three {
+    background-color: silver;
+    overflow: hidden;
+}
+
+.common {
+    height: 310px;
+    width: 46%;
+}
+
+.sec-three-box1 {
+    float: left;
+}
+
+.sec-three-box2 {
+    float: right;
+}
+
+.sec-three-box1 hr {
+    height: 2px;
+    width: 100px;
+    background-color: orange;
+    border-style: none;
+    float: left;
+}
+
+.section-three p {
+    float: left;
+    padding: 20px;
+}
+
+.section-four {
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+.section-four hr {
+    height: 2px;
+    width: 100px;
+    background-color: orange;
+    border-style: none;
+}
+
+.section-four h3,
+p {
+    padding-top: 20px;
+}
+
+.section-four p {
+    color: grey;
+}
+
+.design,
+.crafted,
+.customise {
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+
+.design {
+    float: left;
+}
+
+.customise {
+    float: right;
+}
+
+.crafted {
+    margin-left: 230px;
+}
+
+.circle {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid orange;
+    margin: 30px 0px 0px 110px;
+}
+
+.circle i {
+    color: orange;
+    padding: 28px;
+    font-size: 28px;
+}
+
+.pricing-section {
+    background-color: silver;
+    overflow: hidden;
+}
+
+.pricing-section hr {
+    height: 2px;
+    width: 100px;
+    background-color: orange;
+    border-style: none;
+}
+
+.pricing-section p {
+    padding-bottom: 40px;
+}
+
+.pricing {
+    height: 500px;
+    width: 400px;
+    float: left;
+    margin-left: 110px;
+}
+
+.pricing-heading {
+    height: 250px;
+    background-color: #333333;
+    border-bottom: 4px solid orange;
+}
+
+.pricing-heading h3 {
+    border-bottom: 1px solid #fff;
+    padding: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.price i {
+    color: #fff;
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+.price i sup {
+    color: #fff;
+    font-size: 60px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.pricing-info {
+    background-color: #fff;
+}
+
+.pricing-info ul li {
+    list-style-type: none;
+    padding: 12px;
+    border-bottom: 1px solid grey;
+}
+
+
+
+/*lg, xl, md, sm, xs*/
+
+@media screen and (max-width: 970px) {
+    .quick-links {
+        float: right;
+    }
+    .quick-links ul li {
+        list-style-type: none;
+        display: inline-block;
+        font-size: 26px;
+        padding: 12px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .quick-links ul li:hover {
+        background-color: black;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .quick-links {
+        float: right;
+    }
+    .quick-links ul li {
+        list-style-type: none;
+        display: inline-block;
+        font-size: 24px;
+        padding: 8px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .quick-links ul li:hover {
+        background-color: black;
+        color: #fff;
+    }
+}
+
+
+@media screen and (max-width: 1629px) {
+    .design {
+        float: left;
+    }
+
+    .customise {
+        float: left;
+    }
+
+    .crafted {
+        margin-left: 230px;
+    }
+}
+@media screen and (max-width: 1322px) {
+    .design {
+        float: left;
+    }
+
+    .customise {
+        float: left;
+    }
+
+    .crafted {
+        float: left;
+       	margin-left: 0px;
+    }
+}

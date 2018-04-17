@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	#box{
+		height: 100px;
+		width: 100px;
+		background-color: green;
+	}
+	button{
+		cursor: pointer;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<button onclick="showhide()">display none</button>
+
+
+	<script>
+		var box = document.getElementById('box');
+
+		var btn = document.getElementsByTagName('button')[0];
+		var btn1 = document.getElementsByTagName('button')[1];
+			var childElem;
+			var bool;
+		box.onclick = function(){
+			bool = false;
+			var childElem = document.createElement('div');
+
+			childElem.style.height = '80px'
+			childElem.style.width = '80px'
+			childElem.style.backgroundColor = 'red';
+			childElem.style.position = 'relative';
+			childElem.style.top = '10px';
+			childElem.style.left = '10px';
+			box.appendChild(childElem);
+
+		}
+		  function showhide(){
+		           var div = document.getElementById("box");
+		    if (div.style.display !== "none") {
+		        div.style.display = "none";
+		    }
+		    else {
+		        div.style.display = "block";
+		    }
+		     }
+	</script>
+</body>
+</html>

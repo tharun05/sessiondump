@@ -1,0 +1,105 @@
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+	#tabeldata{
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 18px;
+		padding:12px 20px 12px 40px;
+		border:1px solid #fcfcfc;
+		margin-bottom: 12px;
+	}
+	#tabeldata th, #tabeldata td{
+		text-align: left;
+		padding:18px;
+	}
+	#tabeldata tr{
+		border-bottom: 1px solid grey;
+		cursor: pointer;
+
+	}
+
+	#tabeldata tr.header , #tabeldata tr:hover{
+		background-color: #f2f2f2;
+	}
+	</style>
+</head>
+<body>
+	<input type="text" onkeyup="findrow()" id="inputText" placeholder="find user data">
+
+	<table id="tabeldata">
+		<tr class="header">
+			<th>Name</th>
+			<th>Location</th>
+			<th>Gender</th>
+		</tr>
+		<tr>
+			<td>Tharun</td>
+			<td>Hyderabad</td>
+			<td>Male</td>
+		</tr>
+		<tr>
+			<td>Arun</td>
+			<td>Hyderabad</td>
+			<td>Male</td>
+		</tr>
+		<tr>
+			<td>Angela</td>
+			<td>Hyderabad</td>
+			<td>Female</td>
+		</tr>
+		<tr>
+			<td>Marry</td>
+			<td>Hyderabad</td>
+			<td>Female</td>
+		</tr>
+		<tr>
+			<td>simson</td>
+			<td>Hyderabad</td>
+			<td>Male</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function findrow(){
+			var findChar;
+			var inputValue = document.getElementById('inputText');
+			findChar = inputValue.value.toUpperCase();
+			var table = document.getElementById('tabeldata');
+			var tr = table.getElementsByTagName('tr');
+
+			for(var i = 0;i<tr.length;i++){
+				var td = tr[i].getElementsByTagName('td')[0];
+
+				if(td){
+					if(td.innerHTML.toUpperCase().indexOf(findChar)>-1){
+						tr[i].style.display = ''
+					}
+					else{
+						tr[i].style.display = 'none'
+					}
+				}
+			}
+
+		}
+
+
+		var x = 1;
+		if(x===1){
+			let x = 2;
+			console.log(x);
+		}
+		console.log(x);
+
+		// var y = 10;
+		// function scopeing(){
+		// 	var y = 20;
+		// 	console.log(y);
+		// } 
+		// console.log(y)
+		// scopeing();
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	#box1{
+		height: 100px;
+		width: 100px;
+		border:1px solid;
+		background-color: red;
+	}
+	</style>
+</head>
+<body>
+	<div id="box1" style="height: 100px;width: 100px;"></div>
+
+<script type="text/javascript">
+	var height = 0; 
+	var width= 0;
+	var box = document.getElementById('box1');
+	console.log(box)
+	
+	function topBox(heightt,widthh){
+		console.log(heightt, widthh);
+		var elem = document.createElement('div');
+		elem.style.height = heightt + 'px'
+		elem.style.width = widthh + 'px'
+		elem.style.backgroundColor = 'blue';
+		elem.style.position = 'relative';
+		elem.style.top = '5px';
+		elem.style.left = '5px';
+		console.log(elem)
+
+		box.appendChild(elem);
+
+	}
+	box.onclick = function(){
+		var theHeightCSSprop = window.getComputedStyle(box,null).getPropertyValue("height");
+		var theWidthCSSprop = window.getComputedStyle(box,null).getPropertyValue("width");
+		var height = parseInt(theHeightCSSprop) - 10;
+		var width = parseInt(theWidthCSSprop) - 10;
+		topBox(height,width);
+	}
+
+
+
+</script>
+</body>
+</html>
