@@ -1,51 +1,97 @@
 <html>
 <head>
-	<title></title>
-	<style type="text/css">
-	</style>
+	<title>Form Validations</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js"></script>
 </head>
-<body>
+<body onload="document.registration.userid.focus()">
 
-	<button id="toggle">showHide</button>
-	<div id="showhide" style="height:100px;width:100px;background-color:grey"></div>
-<!-- 	<div id="parentNode">
-	</div>
+	<form name="registration" onSubmit="return formValidate()" style="margin:0px">
+		<ul>
+			<li>
+				<label>User Id</label>
+			</li>
+			<li>
+				<input type="text" name="userid" size="12">
+			</li>
+			<li>
+				<label>Password</label>
+			</li>
+			<li>	
+				<input type="password" name="passid" size="12">
+			</li>
+			<li>	
+				<label>username</label>
+			</li>
+			<li>
+				<input type="text" name="username" size="50">
+			</li>
+			<li>
+				<label>address</label>
+			</li>
+			<li>
+				<input type="text" name="address">
+			</li>
+			<li>
+				<label>country</label>
+			</li>
+			<li>
+				<select name="country">
+					<option selected="" value="Default">(please select the country)</option>
+					<option name="AF">Austrailia</option>
+					<option name="AL">Canada</option>
+					<option name="DZ">India</option>
+					<option name="US">USA</option>
+					<option name="AD">Russia</option>
+				</select>
+			</li>
+			<li>
+				<label>Zipo Code</label>
+			</li>
+			<li>
+				<input type="text" name="zip">
+			</li>
+			<li>
+				<label>Email</label>
+			</li>
+			<li>
+				<input type="email" name="email">
+			</li>
+			<li>
+				<label>Gender</label>
+			</li>
+			<li>
+				<input type="radio" name="msex" value="male"><span>Male</span>
+			</li>
+			<li>
+				<input type="radio" name="msex" value="female"><span>Female</span>
+			</li>
 
-	<h1 class="header" name="head">DIGITAL-LYNC GACHIBOWLI</h1>
-	<h1 class="header">DIGITAL-LYNC</h1>
-	<h1 class="header">DIGITAL-LYNC</h1>
-	<h1 class="header">DIGITAL-LYNC</h1>
-	<h1 class="header">DIGITAL-LYNC TECHNOLOGIES</h1>
+			<li>
+				<label>Lnguage</label>
+			</li>
+			<li>
+				<input type="checkbox" name="en" value="en" checked><span>English</span>
+			</li>
+			<li>
+				<input type="checkbox" name="nonen" value="nonen"><span>Non English</span>
+			</li>
+			<li>
+				<label>About</label>
+			</li>
+			<li>
+				<textarea name="desc" id="desc"></textarea>
+			</li>
+			<li>
+				<input type="submit" name="submit" value="submit">
+			</li>
+		</ul>
 
-	<button>Sumbit</button>
-	<button>Sumbdasdsadasasit</button>
-	<button>Sumbit</button> -->
+	</form>
 
-	<label>Color</label>
-	<select name="cssProperty" id="background">
-		<option>Green</option>
-		<option>Yellow</option>
-		<option>Red</option>
-	</select>
 
-	<label>Width</label>
 
-	<select name="cssProperty" id="width">
-		<option>100px</option>
-		<option>200px</option>
-		<option>300px</option>
-	</select>
 
-	<label>height</label>
 
-	<select name="cssProperty" id="height">
-		<option>100px</option>
-		<option>200px</option>
-		<option>300px</option>
-	</select>
-	<button id="set">apply styles</button>
-	<div id="modify" style="height:100px;width:100px;background-color:blue"></div>
-	
-	<script type="text/javascript" src="domManipulation.js"></script>
 </body>
 </html>
